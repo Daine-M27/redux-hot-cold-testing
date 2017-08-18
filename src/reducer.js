@@ -10,8 +10,8 @@ const initialState = {
     correctAnswer: Math.round(Math.random() * 100),
     showInfoModal: false
 };
-
-export default (state, action) => {
+export const reducer  = (state = initialState, action) => {
+// export default (state, action) => {
     state = state || initialState;
     if (action.type === NEW_GAME) {
         state = Object.assign({

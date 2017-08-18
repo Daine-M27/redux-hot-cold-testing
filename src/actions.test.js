@@ -22,4 +22,5 @@ describe ('toggleInfoModal', () => {
         const action = toggleInfoModal();
         expect(action.type).toEqual('TOGGLE_INFO_MODAL');
     });
+
 });
